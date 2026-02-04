@@ -1,0 +1,809 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Avengers Assemble URDF">
+  <link
+    name="base">
+    <inertial>
+      <origin
+        xyz="0.00451368547067401 0.0132195238561739 0.0626579465287886"
+        rpy="0 0 0" />
+      <mass
+        value="17.7245567668177" />
+      <inertia
+        ixx="0.157757898382346"
+        ixy="0.00168714889985757"
+        ixz="-0.00604685855006871"
+        iyy="0.199526314046597"
+        iyz="4.21435281832245E-05"
+        izz="0.322067493498274" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Avengers Assemble URDF/meshes/base.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.866666666666667 0.909803921568627 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Avengers Assemble URDF/meshes/base.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="left_rover_side">
+    <inertial>
+      <origin
+        xyz="-0.0264288139251844 -4.44352347590549E-05 -0.145194053920879"
+        rpy="0 0 0" />
+      <mass
+        value="4.30781236264187" />
+      <inertia
+        ixx="0.00626308184991884"
+        ixy="7.44028265322793E-08"
+        ixz="4.11525372462643E-05"
+        iyy="0.00975899565202544"
+        iyz="7.79530800669517E-08"
+        izz="0.00778754720874773" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Avengers Assemble URDF/meshes/left_rover_side.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.866666666666667 0.909803921568627 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Avengers Assemble URDF/meshes/left_rover_side.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_rover_side"
+    type="revolute">
+    <origin
+      xyz="0.15102 -0.30007 -0.086319"
+      rpy="0 0 0" />
+    <parent
+      link="base" />
+    <child
+      link="left_rover_side" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-360"
+      upper="360"
+      effort="2.94"
+      velocity="10" />
+  </joint>
+  <link
+    name="tri_1">
+    <inertial>
+      <origin
+        xyz="6.00186400578906E-10 -0.0398921459382417 0.00269666959134815"
+        rpy="0 0 0" />
+      <mass
+        value="0.676410451719879" />
+      <inertia
+        ixx="0.000541223558434898"
+        ixy="-5.09138548303837E-12"
+        ixz="4.21036142204295E-12"
+        iyy="0.000719006105052547"
+        iyz="2.7731106736855E-12"
+        izz="0.00028076183858652" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Avengers Assemble URDF/meshes/tri_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Avengers Assemble URDF/meshes/tri_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="tri_1"
+    type="revolute">
+    <origin
+      xyz="0.14714 -0.008 -0.15264"
+      rpy="0 0 0" />
+    <parent
+      link="left_rover_side" />
+    <child
+      link="tri_1" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-360"
+      upper="360"
+      effort="2.94"
+      velocity="10" />
+  </joint>
+  <link
+    name="tri1_top">
+    <inertial>
+      <origin
+        xyz="0 0.0270000000000001 -5.55111512312578E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.0990979715178122" />
+      <inertia
+        ixx="3.89346088667124E-05"
+        ixy="1.01501265014851E-20"
+        ixz="9.47246866133023E-22"
+        iyy="6.5430826116606E-05"
+        iyz="3.50022932262078E-21"
+        izz="3.89346088667123E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Avengers Assemble URDF/meshes/tri1_top.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Avengers Assemble URDF/meshes/tri1_top.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="tri1_top"
+    type="continuous">
+    <origin
+      xyz="0 -0.074 0.13"
+      rpy="0 0 0" />
+    <parent
+      link="tri_1" />
+    <child
+      link="tri1_top" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="tri1_right">
+    <inertial>
+      <origin
+        xyz="5.55111512312578E-17 0.027 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0990979715178122" />
+      <inertia
+        ixx="3.89346088667123E-05"
+        ixy="9.38300695622163E-21"
+        ixz="-6.98668581334702E-21"
+        iyy="6.5430826116606E-05"
+        iyz="3.58256844637914E-21"
+        izz="3.89346088667123E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Avengers Assemble URDF/meshes/tri1_right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Avengers Assemble URDF/meshes/tri1_right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="tri1_right"
+    type="continuous">
+    <origin
+      xyz="0.0514169508269738 -0.0740000000000001 -0.0581115379759186"
+      rpy="0 0 0" />
+    <parent
+      link="tri_1" />
+    <child
+      link="tri1_right" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="tri1_left">
+    <inertial>
+      <origin
+        xyz="2.77555756156289E-17 0.027 5.55111512312578E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.0990979715178122" />
+      <inertia
+        ixx="3.89346088667123E-05"
+        ixy="2.25768608438692E-21"
+        ixz="7.34652496986831E-22"
+        iyy="6.5430826116606E-05"
+        iyz="2.94706217775396E-21"
+        izz="3.89346088667123E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Avengers Assemble URDF/meshes/tri1_left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Avengers Assemble URDF/meshes/tri1_left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="tri1_left"
+    type="continuous">
+    <origin
+      xyz="-0.0514169508269741 -0.074 -0.0581115379759186"
+      rpy="0 0 0" />
+    <parent
+      link="tri_1" />
+    <child
+      link="tri1_left" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="left_1">
+    <inertial>
+      <origin
+        xyz="-4.44204731591541E-10 -0.0435286566314574 2.51816900664892E-11"
+        rpy="0 0 0" />
+      <mass
+        value="1.35971159984968" />
+      <inertia
+        ixx="0.00291859949595374"
+        ixy="1.11893129357462E-11"
+        ixz="-1.20550701863929E-07"
+        iyy="0.00547170360055878"
+        iyz="-1.14603820440089E-12"
+        izz="0.00291878545174867" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Avengers Assemble URDF/meshes/left_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Avengers Assemble URDF/meshes/left_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_1"
+    type="continuous">
+    <origin
+      xyz="-0.152635353702065 -0.00799999999999973 -0.147142705576116"
+      rpy="0 0 0" />
+    <parent
+      link="left_rover_side" />
+    <child
+      link="left_1" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="left_2">
+    <inertial>
+      <origin
+        xyz="1.80156056739378E-10 -0.0435286566314573 -4.06789740781122E-10"
+        rpy="0 0 0" />
+      <mass
+        value="1.35971159984969" />
+      <inertia
+        ixx="0.00291864888772627"
+        ixy="-4.08461533291769E-12"
+        ixz="1.45868471052923E-07"
+        iyy="0.00547170360055876"
+        iyz="1.04807915614401E-11"
+        izz="0.00291873605997613" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Avengers Assemble URDF/meshes/left_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Avengers Assemble URDF/meshes/left_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_2"
+    type="continuous">
+    <origin
+      xyz="-0.2988 -0.30407 -0.2365"
+      rpy="0 0 0" />
+    <parent
+      link="base" />
+    <child
+      link="left_2" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="right_rover_side">
+    <inertial>
+      <origin
+        xyz="-0.0264302068478089 0.00204443523475933 -0.145193470004912"
+        rpy="0 0 0" />
+      <mass
+        value="4.30781236264188" />
+      <inertia
+        ixx="0.00626317174451501"
+        ixy="3.64516465102274E-07"
+        ixz="4.11230827501069E-05"
+        iyy="0.00975899565202542"
+        iyz="-2.62018286675263E-07"
+        izz="0.00778745731415152" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Avengers Assemble URDF/meshes/right_rover_side.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.866666666666667 0.909803921568627 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Avengers Assemble URDF/meshes/right_rover_side.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_rover_side"
+    type="revolute">
+    <origin
+      xyz="0.15102 0.29593 -0.086319"
+      rpy="0 0 0" />
+    <parent
+      link="base" />
+    <child
+      link="right_rover_side" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-360"
+      upper="360"
+      effort="2.94"
+      velocity="10" />
+  </joint>
+  <link
+    name="tri_2">
+    <inertial>
+      <origin
+        xyz="-6.00186400578906E-10 0.0398921459382418 0.00269666959134812"
+        rpy="0 0 0" />
+      <mass
+        value="0.676410451719878" />
+      <inertia
+        ixx="0.000541223558434896"
+        ixy="-5.09138555380719E-12"
+        ixz="-4.21036158254408E-12"
+        iyy="0.000719006105052545"
+        iyz="-2.77311044953961E-12"
+        izz="0.00028076183858652" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Avengers Assemble URDF/meshes/tri_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Avengers Assemble URDF/meshes/tri_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="tri_2"
+    type="revolute">
+    <origin
+      xyz="0.14714 0.01 -0.15264"
+      rpy="0 0 0" />
+    <parent
+      link="right_rover_side" />
+    <child
+      link="tri_2" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-360"
+      upper="360"
+      effort="2.94"
+      velocity="10" />
+  </joint>
+  <link
+    name="tri2_top">
+    <inertial>
+      <origin
+        xyz="0 -0.027 -1.38777878078145E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.0990979715178122" />
+      <inertia
+        ixx="3.89346088667123E-05"
+        ixy="-6.15648557938198E-22"
+        ixz="-1.61077565282614E-21"
+        iyy="6.5430826116606E-05"
+        iyz="1.05742275337519E-20"
+        izz="3.89346088667123E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Avengers Assemble URDF/meshes/tri2_top.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Avengers Assemble URDF/meshes/tri2_top.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="tri2_top"
+    type="continuous">
+    <origin
+      xyz="0 0.074 0.13"
+      rpy="0 0 0" />
+    <parent
+      link="tri_2" />
+    <child
+      link="tri2_top" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="tri2_right">
+    <inertial>
+      <origin
+        xyz="0 -0.027 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0990979715178122" />
+      <inertia
+        ixx="3.89346088667123E-05"
+        ixy="-5.47731213533912E-21"
+        ixz="6.05494033283528E-21"
+        iyy="6.5430826116606E-05"
+        iyz="1.00500903918675E-20"
+        izz="3.89346088667123E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Avengers Assemble URDF/meshes/tri2_right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Avengers Assemble URDF/meshes/tri2_right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="tri2_right"
+    type="continuous">
+    <origin
+      xyz="-0.0514169508269739 0.0740000000000001 -0.0581115379759185"
+      rpy="0 0 0" />
+    <parent
+      link="tri_2" />
+    <child
+      link="tri2_right" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="tri2_left">
+    <inertial>
+      <origin
+        xyz="5.55111512312578E-17 -0.0270000000000001 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.099097971517812" />
+      <inertia
+        ixx="3.89346088667123E-05"
+        ixy="3.98371475475245E-22"
+        ixz="3.1733102484636E-21"
+        iyy="6.54308261166058E-05"
+        iyz="1.16450536966605E-20"
+        izz="3.89346088667122E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Avengers Assemble URDF/meshes/tri2_left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Avengers Assemble URDF/meshes/tri2_left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="tri2_left"
+    type="continuous">
+    <origin
+      xyz="0.051416950826974 0.0740000000000001 -0.0581115379759185"
+      rpy="0 0 0" />
+    <parent
+      link="tri_2" />
+    <child
+      link="tri2_left" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="right_1">
+    <inertial>
+      <origin
+        xyz="-1.2635802126848E-10 0.0435286566314572 -4.26572277500981E-10"
+        rpy="0 0 0" />
+      <mass
+        value="1.3597115998497" />
+      <inertia
+        ixx="0.0029186875284711"
+        ixy="-2.70306444458824E-12"
+        ixz="-1.52160784532252E-07"
+        iyy="0.00547170360055877"
+        iyz="-1.09189640502625E-11"
+        izz="0.00291869741923129" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Avengers Assemble URDF/meshes/right_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Avengers Assemble URDF/meshes/right_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_1"
+    type="continuous">
+    <origin
+      xyz="-0.152635353702065 0.0100000000000002 -0.147142705576116"
+      rpy="0 0 0" />
+    <parent
+      link="right_rover_side" />
+    <child
+      link="right_1" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="right_2">
+    <inertial>
+      <origin
+        xyz="4.44878633931722E-10 0.0435286566314573 -5.73863179198497E-12"
+        rpy="0 0 0" />
+      <mass
+        value="1.35971159984968" />
+      <inertia
+        ixx="0.00291861710334879"
+        ixy="1.12419138971437E-11"
+        ixz="1.32274897475846E-07"
+        iyy="0.00547170360055877"
+        iyz="3.65917550218114E-13"
+        izz="0.00291876784435361" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Avengers Assemble URDF/meshes/right_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Avengers Assemble URDF/meshes/right_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_2"
+    type="continuous">
+    <origin
+      xyz="-0.2988 0.30193 -0.2365"
+      rpy="0 0 0" />
+    <parent
+      link="base" />
+    <child
+      link="right_2" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+</robot>
