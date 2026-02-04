@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot name="r2krishna">
+  
+  <link name="base_link">
+    <inertial>
+      <origin xyz="0.110273400547228 -0.0643438972852127 0.0207053230118007" rpy="0 0 0" />
+      <mass value="21.9610196729677" />
+      <inertia ixx="0.15447400659073" ixy="0.00169652603130967" ixz="-0.00512190357984683" iyy="0.16520749268662" iyz="-7.06369736169903E-05" izz="0.285489345704309" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry><mesh filename="package://r2krishna/meshes/base_link.STL" /></geometry>
+      <material name=""><color rgba="0.75 0.75 0.75 1" /></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry><mesh filename="package://r2krishna/meshes/base_link.STL" /></geometry>
+    </collision>
+  </link>
+
+  <link name="link_FL1">
+    <inertial>
+      <origin xyz="0.00061925 -0.034108 -7.4778E-05" rpy="0 0 0" />
+      <mass value="0.67641" />
+      <inertia ixx="0.00028451" ixy="2.1427E-12" ixz="3.1E-05" iyy="0.00071901" iyz="-5.3869E-12" izz="0.00053748" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry><mesh filename="package://r2krishna/meshes/link_FL1.STL" /></geometry>
+      <material name=""><color rgba="1 1 1 1" /></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry><mesh filename="package://r2krishna/meshes/link_FL1.STL" /></geometry>
+    </collision>
+  </link>
+  <joint name="joint_FL1" type="continuous">
+    <origin xyz="0.30332 0.37993 -0.22077" rpy="0 1.5708 0" />
+    <parent link="base_link" />
+    <child link="link_FL1" />
+    <axis xyz="0 1 0" />
+  </joint>
+
+  <link name="link_FL2">
+    <inertial>
+      <origin xyz="7.2164E-16 -0.01 1.027E-15" rpy="0 0 0" />
+      <mass value="0.099098" />
+      <inertia ixx="3.8935E-05" ixy="-4.7043E-20" ixz="-1.1315E-20" iyy="6.5431E-05" iyz="1.6209E-19" izz="3.8935E-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry><mesh filename="package://r2krishna/meshes/link_FL2.STL" /></geometry>
+      <material name=""><color rgba="1 1 1 1" /></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry><mesh filename="package://r2krishna/meshes/link_FL2.STL" /></geometry>
+    </collision>
+  </link>
+  <joint name="joint_FL2" type="continuous">
+    <origin xyz="0.3185 0.36293 -0.095009" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="link_FL2" />
+    <axis xyz="0 1 0" />
+  </joint>
+
+  <link name="link_FL3">
+    <inertial>
+      <origin xyz="7.2164E-16 -0.01 1.0547E-15" rpy="0 0 0" />
+      <mass value="0.099098" />
+      <inertia ixx="3.8935E-05" ixy="-4.6635E-20" ixz="-1.6422E-21" iyy="6.5431E-05" iyz="1.6532E-19" izz="3.8935E-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry><mesh filename="package://r2krishna/meshes/link_FL3.STL" /></geometry>
+      <material name=""><color rgba="1 1 1 1" /></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry><mesh filename="package://r2krishna/meshes/link_FL3.STL" /></geometry>
+    </collision>
+  </link>
+  <joint name="joint_FL3" type="continuous">
+    <origin xyz="0.347 0.36293 -0.28793" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="link_FL3" />
+    <axis xyz="0 1 0" />
+  </joint>
+
+  <link name="link_FL4">
+    <inertial>
+      <origin xyz="2.7756E-17 -0.01 0" rpy="0 0 0" />
+      <mass value="0.099098" />
+      <inertia ixx="3.8935E-05" ixy="-4.2324E-20" ixz="3.5808E-21" iyy="6.5431E-05" iyz="1.6543E-19" izz="3.8935E-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry><mesh filename="package://r2krishna/meshes/link_FL4.STL" /></geometry>
+      <material name=""><color rgba="1 1 1 1" /></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry><mesh filename="package://r2krishna/meshes/link_FL4.STL" /></geometry>
+    </collision>
+  </link>
+  <joint name="joint_FL4" type="continuous">
+    <origin xyz="0.24491 0.36293 -0.2756" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="link_FL4" />
+    <axis xyz="0 1 0" />
+  </joint>
+
+  <link name="link_bogieL">
+    <inertial>
+      <origin xyz="-0.065923 0.042065 -0.14456" rpy="0 0 0" />
+      <mass value="2.9349" />
+      <inertia ixx="0.0071128" ixy="-2.0634E-12" ixz="-4.6428E-05" iyy="0.014972" iyz="8.6033E-12" izz="0.0086463" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry><mesh filename="package://r2krishna/meshes/link_bogieL.STL" /></geometry>
+      <material name=""><color rgba="0.86667 0.9098 1 1" /></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry><mesh filename="package://r2krishna/meshes/link_bogieL.STL" /></geometry>
+    </collision>
+  </link>
+  <joint name="joint_bogieL" type="continuous">
+    <origin xyz="0.15102 0.29993 -0.076168" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="link_bogieL" />
+    <axis xyz="0 1 0" />
+  </joint>
+
+  <link name="link_ML">
+    <inertial>
+      <origin xyz="1.0203E-10 -0.01995 2.8366E-10" rpy="0 0 0" />
+      <mass value="2.0069" />
+      <inertia ixx="0.0059093" ixy="3.3235E-12" ixz="-1.8276E-07" iyy="0.011135" iyz="1.0746E-11" izz="0.0059093" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry><mesh filename="package://r2krishna/meshes/link_ML.STL" /></geometry>
+      <material name=""><color rgba="0.25 0.25 0.25 1" /></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry><mesh filename="package://r2krishna/meshes/link_ML.STL" /></geometry>
+    </collision>
+  </link>
+  <joint name="joint_ML" type="continuous">
+    <origin xyz="0.0031166 0.36593 -0.22807" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="link_ML" />
+    <axis xyz="0 1 0" />
+  </joint>
+
+  <link name="link_BL">
+    <inertial>
+      <origin xyz="4.6348E-11 -0.01995 -2.9787E-10" rpy="0 0 0" />
+      <mass value="2.0069" />
+      <inertia ixx="0.0059094" ixy="2.2314E-12" ixz="-1.2162E-07" iyy="0.011135" iyz="-1.1025E-11" izz="0.0059092" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry><mesh filename="package://r2krishna/meshes/link_BL.STL" /></geometry>
+      <material name=""><color rgba="1 0.94902 0.9098 1" /></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry><mesh filename="package://r2krishna/meshes/link_BL.STL" /></geometry>
+    </collision>
+  </link>
+  <joint name="joint_BL" type="continuous">
+    <origin xyz="-0.2988 0.36193 -0.22635" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="link_BL" />
+    <axis xyz="0 1 0" />
+  </joint>
+
+  <link name="link_FR1">
+    <inertial>
+      <origin xyz="-7.4777E-05 0.034108 -0.00061925" rpy="0 0 0" />
+      <mass value="0.67641" />
+      <inertia ixx="0.00053748" ixy="-4.722E-12" ixz="-3.1E-05" iyy="0.00071901" iyz="3.3634E-12" izz="0.00028451" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry><mesh filename="package://r2krishna/meshes/link_FR1.STL" /></geometry>
+      <material name=""><color rgba="1 1 1 1" /></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry><mesh filename="package://r2krishna/meshes/link_FR1.STL" /></geometry>
+    </collision>
+  </link>
+  <joint name="joint_FR1" type="continuous">
+    <origin xyz="0.30332 -0.38207 -0.22077" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="link_FR1" />
+    <axis xyz="0 1 0" />
+  </joint>
+
+  <link name="link_FR2">
+    <inertial>
+      <origin xyz="0 0.01 6.9389E-17" rpy="0 0 0" />
+      <mass value="0.099098" />
+      <inertia ixx="3.8935E-05" ixy="-2.6072E-20" ixz="2.0643E-21" iyy="6.5431E-05" iyz="2.0555E-19" izz="3.8935E-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry><mesh filename="package://r2krishna/meshes/link_FR2.STL" /></geometry>
+      <material name=""><color rgba="1 1 1 1" /></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry><mesh filename="package://r2krishna/meshes/link_FR2.STL" /></geometry>
+    </collision>
+  </link>
+  <joint name="joint_FR2" type="continuous">
+    <origin xyz="0.3185 -0.36507 -0.095009" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="link_FR2" />
+    <axis xyz="0 1 0" />
+  </joint>
+
+  <link name="link_FR3">
+    <inertial>
+      <origin xyz="-2.7756E-17 0.01 5.5511E-17" rpy="0 0 0" />
+      <mass value="0.099098" />
+      <inertia ixx="3.8935E-05" ixy="-2.3474E-20" ixz="5.1648E-21" iyy="6.5431E-05" iyz="2.028E-19" izz="3.8935E-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry><mesh filename="package://r2krishna/meshes/link_FR3.STL" /></geometry>
+      <material name=""><color rgba="1 1 1 1" /></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry><mesh filename="package://r2krishna/meshes/link_FR3.STL" /></geometry>
+    </collision>
+  </link>
+  <joint name="joint_FR3" type="continuous">
+    <origin xyz="0.24491 -0.36507 -0.2756" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="link_FR3" />
+    <axis xyz="0 1 0" />
+  </joint>
+
+  <link name="link_FR4">
+    <inertial>
+      <origin xyz="-5.5511E-17 0.01 5.5511E-17" rpy="0 0 0" />
+      <mass value="0.099098" />
+      <inertia ixx="3.8935E-05" ixy="-2.5923E-20" ixz="7.0653E-22" iyy="6.5431E-05" iyz="2.0272E-19" izz="3.8935E-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry><mesh filename="package://r2krishna/meshes/link_FR4.STL" /></geometry>
+      <material name=""><color rgba="1 1 1 1" /></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry><mesh filename="package://r2krishna/meshes/link_FR4.STL" /></geometry>
+    </collision>
+  </link>
+  <joint name="joint_FR4" type="continuous">
+    <origin xyz="0.347 -0.36507 -0.28793" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="link_FR4" />
+    <axis xyz="0 1 0" />
+  </joint>
+
+  <link name="link_bogieR">
+    <inertial>
+      <origin xyz="-0.065923 -0.046065 -0.14456" rpy="0 0 0" />
+      <mass value="2.9349" />
+      <inertia ixx="0.0071127" ixy="-1.2688E-11" ixz="-4.6165E-05" iyy="0.014972" iyz="1.1305E-11" izz="0.0086464" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry><mesh filename="package://r2krishna/meshes/link_bogieR.STL" /></geometry>
+      <material name=""><color rgba="0.86667 0.9098 1 1" /></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry><mesh filename="package://r2krishna/meshes/link_bogieR.STL" /></geometry>
+    </collision>
+  </link>
+  <joint name="joint_bogieR" type="continuous">
+    <origin xyz="0.15102 -0.29807 -0.076168" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="link_bogieR" />
+    <axis xyz="0 1 0" />
+  </joint>
+
+  <link name="link_MR">
+    <inertial>
+      <origin xyz="2.229E-10 0.01995 -2.0295E-10" rpy="0 0 0" />
+      <mass value="2.0069" />
+      <inertia ixx="0.0059091" ixy="-7.9655E-12" ixz="8.0349E-08" iyy="0.011135" iyz="7.9419E-12" izz="0.0059095" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry><mesh filename="package://r2krishna/meshes/link_MR.STL" /></geometry>
+      <material name=""><color rgba="1 0.94902 0.9098 1" /></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry><mesh filename="package://r2krishna/meshes/link_MR.STL" /></geometry>
+    </collision>
+  </link>
+  <joint name="joint_MR" type="continuous">
+    <origin xyz="0.0031166 -0.36807 -0.22807" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="link_MR" />
+    <axis xyz="0 1 0" />
+  </joint>
+
+  <link name="link_BR">
+    <inertial>
+      <origin xyz="2.4959E-10 0.01995 -1.6905E-10" rpy="0 0 0" />
+      <mass value="2.0069" />
+      <inertia ixx="0.0059091" ixy="-9.0177E-12" ixz="3.0059E-08" iyy="0.011135" iyz="6.7234E-12" izz="0.0059095" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry><mesh filename="package://r2krishna/meshes/link_BR.STL" /></geometry>
+      <material name=""><color rgba="0.25098 0.25098 0.25098 1" /></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry><mesh filename="package://r2krishna/meshes/link_BR.STL" /></geometry>
+    </collision>
+  </link>
+  <joint name="Joint_BR" type="continuous">
+    <origin xyz="-0.2988 -0.36407 -0.22635" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="link_BR" />
+    <axis xyz="0 1 0" />
+  </joint>
+
+  <link name="laser_frame">
+    <visual>
+      <geometry><cylinder length="0.04" radius="0.03"/></geometry>
+      <material name="black"><color rgba="0 0 0 1"/></material>
+    </visual>
+    <inertial>
+      <mass value="0.1"/>
+      <inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+    </inertial>
+  </link>
+
+  <joint name="lidar_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="laser_frame"/>
+    <origin xyz="0 0 0.005" rpy="0 0 0"/>
+  </joint>
+
+  <gazebo>
+    <plugin filename="gz-sim-diff-drive-system" name="gz::sim::systems::DiffDrive">
+      <left_joint>joint_ML</left_joint>
+      <right_joint>joint_MR</right_joint>
+      <wheel_separation>0.6</wheel_separation>
+      <wheel_radius>0.1</wheel_radius>
+      <odom_publish_frequency>20</odom_publish_frequency>
+      <topic>cmd_vel</topic>
+      <odom_topic>odom</odom_topic>
+      <tf_topic>tf</tf_topic>
+      <frame_id>odom</frame_id>
+      <child_frame_id>base_link</child_frame_id>
+    </plugin>
+    
+    <plugin filename="gz-sim-joint-state-publisher-system" name="gz::sim::systems::JointStatePublisher">
+      <topic>joint_states</topic>
+    </plugin>
+  </gazebo>
+
+  <gazebo reference="link_ML">
+      <mu1>2.0</mu1><mu2>2.0</mu2><kp>1000000.0</kp><kd>1.0</kd>
+  </gazebo>
+  <gazebo reference="link_MR">
+      <mu1>2.0</mu1><mu2>2.0</mu2><kp>1000000.0</kp><kd>1.0</kd>
+  </gazebo>
+
+  <gazebo reference="laser_frame">
+    <sensor name="lidar" type="gpu_lidar">
+      <pose>0 0 0 0 0 0</pose>
+      <topic>scan</topic>
+      <frame_id>laser_frame</frame_id>
+      <always_on>true</always_on>
+      <visualize>true</visualize>
+      <update_rate>10</update_rate>
+      <ray>
+        <scan>
+          <horizontal>
+            <samples>360</samples>
+            <resolution>1</resolution>
+            <min_angle>-3.14</min_angle>
+            <max_angle>3.14</max_angle>
+          </horizontal>
+        </scan>
+        <range>
+          <min>0.15</min>
+          <max>12.0</max>
+        </range>
+      </ray>
+    </sensor>
+  </gazebo>
+
+</robot>
